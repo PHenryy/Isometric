@@ -1,7 +1,7 @@
 {
-  "name": "Isometric",
-  "id": "739033388127676785",
-  "api": "1.0.0",
-  "main": "code.js",
-  "ui": "ui.html"
+    "name": "Isometric",
+    "id": "739033388127676785",
+    "api": "1.0.0",
+    "main": "dist/code.js",
+    "ui": "dist/ui.html"
 }
