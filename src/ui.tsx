@@ -7,19 +7,24 @@ declare function require(path: string): any;
 class App extends React.Component {
   textbox: HTMLInputElement;
 
-  // onCreate = () => {
-  //     const count = parseInt(this.textbox.value, 10)
-  //     parent.postMessage({ pluginMessage: { type: 'create-rectangles', count } }, '*')
-  // }
+  onCreate = () => {
+    parent.postMessage({ pluginMessage: { type: "create-rectangles" } }, "*");
+  };
 
   // onCancel = () => {
   //     parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
   // }
 
+  print() {
+    console.log(figma);
+  }
+
   render() {
     return (
       <div>
-        <button className="bg-green-400">TEST</button>
+        <button className="bg-green-400" onClick={this.onCreate}>
+          TEST
+        </button>
       </div>
     );
   }
